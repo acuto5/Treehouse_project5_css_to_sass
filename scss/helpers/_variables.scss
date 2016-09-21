@@ -1,0 +1,33 @@
+//Colors
+$snow : snow;											//body bg color
+$white: white;											//nav links and "portfolio" div bg color
+$lightgreen: #f3ffe6;									//"skills" div bg color
+$lightgrey: lightgrey;										//footer t-border color
+$green: #00cc00;											//"skills" borders and nav links color on hover
+
+
+//Font styles
+$base-font-size: 1em;
+$bigger-link-font-size: $base-font-size - 0.01em;			//0.99em
+$smaller-link-font-size: $base-font-size * 0.95; 				//0.95em
+$big-h1-font-size: $base-font-size * 1.7; 						//1.7em
+$small-h1-font-size: $base-font-size * 1.11;					//1.11em
+
+
+//Font stack
+$font-dosis : 'Dosis', sans-serif;
+
+
+//Media queries brake points
+$br-medium: 768px;
+$br-wide: 1024px;
+
+
+//Containers and img width
+$con-width: 90.625%;
+
+//Border radius for images and "skills" div
+$b-radius: 10px;
+
+//Padding top and bottom
+$padding-t-b: 35px;

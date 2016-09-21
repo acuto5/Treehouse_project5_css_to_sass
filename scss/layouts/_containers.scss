@@ -1,0 +1,71 @@
+main {
+	& h1 {
+		font-size: $small-h1-font-size;
+	}
+}
+
+.col{
+	@include mq(){
+		@include for-class-col;
+	}
+	@include mq(wide){
+		@include for-class-col(33.333%);
+	}
+	& p {
+		padding: 0 25px $padding-t-b;
+	}
+}
+
+#portfolio {
+	background-color: $white;
+	@include mq(wide){
+		width: 94.24%;
+		margin: 0 auto;
+		margin-top: 25px;
+	}
+	& h1{
+		@extend %t-b-padding;
+	}
+}
+
+#contact {
+	margin: 0 auto;
+	padding-bottom: 50px;
+	@extend %width;
+	& li{
+		padding: 5px 0;
+	}
+	& h1{
+		@extend %t-b-padding;
+	}
+}
+
+#skills {
+	background-color: $lightgreen;
+	border-radius: $b-radius;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	margin-top: 20px;
+	@include mq(wide){
+		width: 94.24%;
+		margin: 0 auto;
+		margin-top: 25px;
+	}
+	& img {
+		width: 250px;
+		height: 250px;
+		opacity: 0.5;
+		&:hover {
+			opacity: 1;
+			border-radius: 5px;
+			box-shadow:none;
+		}
+	}
+	& h1{
+		@extend %t-b-padding;
+	}
+	&:hover{
+		border-top: 5px solid #69cc00;
+		border-bottom: 5px solid #69cc00;
+	}
+}

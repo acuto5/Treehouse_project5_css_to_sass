@@ -1,0 +1,61 @@
+footer {
+	& .footer-name {
+		float:left;
+	}
+	& ul {
+		float: right;
+		padding-left: 0;
+		@extend %inline-block;
+	}
+	& h1 {
+		font-size: $small-h1-font-size;
+		@extend %inline-block;
+	}
+	& a {
+		font-size: $smaller-link-font-size;
+		padding-left: 15px;
+	}
+}
+
+.footer{
+	&-wrap {
+		margin: 0 auto;
+		border-top: 2px solid lightgrey;
+		font-weight: bold;
+		padding: 15px 0;
+		height: 80px;
+		@extend %width;
+	}
+	&-nav a:hover{
+		@extend %change-text-color;
+		
+	}
+}
+	
+@include mq(medium){
+	.desktop {
+		display: inline-block;
+	}
+	.mobile {
+		display: none;
+	}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

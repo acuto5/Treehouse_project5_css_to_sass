@@ -1,0 +1,21 @@
+@mixin for-class-col($width: 50%){
+	margin: -4px;
+	width: $width;
+	display: inline-block;
+	vertical-align: top;
+}
+
+@mixin mq($screen-size: medium) {
+  @if $screen-size == medium {
+    @media screen and (min-width: $br-medium) { @content; }
+  }
+  @else if $screen-size == wide {
+    @media screen and (min-width: $br-wide) { @content; }
+  }
+}
+
+@mixin main-nav-format(){
+	padding:0 !important;
+	margin: 0 !important;
+	line-height: 30px;
+}

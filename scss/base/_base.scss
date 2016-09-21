@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: $snow;
+	text-align: center;
+	padding: 0;
+	max-width: 1200px;
+	margin: 0 auto;
+	font-family: $font-dosis;
+}
+
+.all-caps{
+	text-transform: uppercase;
+}
+
+a {
+	font-size: $bigger-link-font-size;
+	text-decoration: none;
+	color: inherit;
+}
+
+li {
+	list-style-type: none;
+}
+
+span {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: $big-h1-font-size;
+}
+
+.desktop {
+	display: none;
+}
+
+img{
+	@extend %width;
+	&:hover {
+		box-shadow: 8px 8px 15px #123456;
+		border-radius: $b-radius;
+	}
+}
+
+.show-menu {/*using to show/hide menu on narrow devices*/
+	display: none;
+}

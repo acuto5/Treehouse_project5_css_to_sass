@@ -1,0 +1,33 @@
+header {
+	padding-bottom: $padding-t-b;
+	margin: 0 auto;
+	@extend %width;
+	@include mq(wide){
+		max-width: 100% !important;
+	}
+}
+
+.profile{
+	padding-top: $padding-t-b;
+	@extend %clearfix;
+	@include mq(){
+		margin-top: 20px;
+	}
+	& img {
+		width: 62.5%;
+		@include mq(){
+			width: 40%;
+			float: right;
+		}
+	}
+	& p{
+		padding: 0 30px;
+		@include mq(){
+			width: 55%;
+			float: left;
+			padding: 0;
+			margin: 0;
+			text-align: left;
+		}
+	}
+}

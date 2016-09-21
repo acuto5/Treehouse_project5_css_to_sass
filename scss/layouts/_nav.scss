@@ -1,0 +1,84 @@
+.main-nav{
+	@extend %width;
+	@extend %clearfix;
+	@extend %padding-margin-0;
+	@include mq(wide){
+		max-width: 100% !important;
+		width: $con-width;
+		margin: 0 auto;
+	}
+	h1{
+		padding-top: 20px;
+		@include mq(wide){
+			display: inline-block;
+			float: left;
+			min-width: auto;
+			text-align: left;
+			@include main-nav-format;
+			padding-top: $padding-t-b !important;
+		}
+	}
+	a{
+		display: block;
+		margin: 0 auto;
+		background-color: $white;
+		padding: 10px 0;
+		margin-bottom: 5px;
+		font-weight: bold;
+		&:hover{
+			@extend %change-text-color;
+		}
+		@include mq(){
+			background-color: inherit !important;
+		}
+		@include mq(wide){
+			width: initial;
+			@include main-nav-format;
+		}
+	}
+	ul{
+		@extend %padding-margin-0;
+		@include mq(){
+			display: inline-block;
+		}
+		@include mq(wide){
+			display: inline-block;
+			width: initial;
+		}
+	}
+	& li{
+		@include mq(){
+			display: inline-block;
+			padding: 0 15px;
+		}
+		@include mq(wide){
+			@include main-nav-format;
+			padding-left: 15px !important;
+			padding-bottom: $padding-t-b !important;
+			padding-top: $padding-t-b !important;
+		}
+	}
+}
+
+.nav {
+	@include mq(wide){
+		float: right;
+	}
+}
+
+.hamburger{/*"hamburger" icon in mobile devices*/
+	display: block;
+	height: 55px;
+	width: 55px;
+	margin: 0 auto;
+	cursor: pointer;
+	& img:hover{
+		box-shadow: none;
+	}
+	@include mq(){
+		display: none;
+	}
+	@include mq(wide){
+		display: none;
+	}
+}

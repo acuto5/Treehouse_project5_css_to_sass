@@ -1,0 +1,42 @@
+//width of containers and img
+%width{
+	width: $con-width;
+}
+
+//footer list display
+%inline-block{
+	display: inline-block;
+}
+
+//.main-nav
+%padding-margin-0{
+	margin: 0 auto;
+	padding: 0;
+}
+
+//divs top bottom padding
+%t-b-padding{
+	padding: 50px 0;
+}
+
+//links hover transformation
+%change-text-color{
+	color: #00cc00;
+	transition: all .5s;
+}
+
+//clearfix
+%clearfix {
+	&:after {
+		@extend %clear;
+	}
+	&:before {
+		@extend %clear;
+	}
+}
+
+%clear{
+	content: "";
+	display: table;
+	clear: both;
+}
